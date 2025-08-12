@@ -12,6 +12,9 @@ RUN npm ci --only=production && npm install -g serve
 # Copy source code
 COPY frontend/ .
 
+RUN npm install --registry=https://npm.fzyun.io
+
+
 # Build the application
 RUN npm run build
 
