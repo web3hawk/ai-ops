@@ -7,13 +7,11 @@ WORKDIR /app
 COPY frontend/package*.json ./
 
 # Install dependencies and serve package
-RUN npm ci --only=production && npm install -g serve
+RUN npm ci --only=production
+RUN npm install -g serve --registry=https://npm.fzyun.io
 
 # Copy source code
 COPY frontend/ .
-
-RUN npm install --registry=https://npm.fzyun.io
-
 
 # Build the application
 RUN npm run build
