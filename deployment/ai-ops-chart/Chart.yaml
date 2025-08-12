@@ -1,0 +1,18 @@
+apiVersion: v2
+name: ai-ops
+description: A Helm chart for AI-Ops (Intelligent Chain Cloud Operations) web application
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - ai-ops
+  - intelligent-operations
+  - cloud-operations
+  - react
+  - frontend
+maintainers:
+  - name: AI-Ops Team
+    email: team@ai-ops.com
+sources:
+  - https://github.com/your-org/ai-ops
+home: https://ai-ops.com

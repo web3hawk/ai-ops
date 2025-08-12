@@ -1,0 +1,9 @@
+@echo off
+echo Starting AI-Ops Frontend Development Server...
+cd /d "%~dp0frontend"
+echo Current directory: %cd%
+echo Installing dependencies...
+call npm install
+echo Starting ./React development server...
+call npm start
+pause
